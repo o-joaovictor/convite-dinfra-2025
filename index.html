@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite DINFRA 2025</title>
+    <!-- Ícone de Envelope na aba do navegador -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%231e3a8a' d='M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z'/></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(-45deg, #1e3a8a, #2563eb, #1e40af, #172554);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Cores Institucionais */
+        .bg-suape-dark { background-color: #1e3a8a; }
+        .text-suape-blue { color: #2563eb; }
+        .text-suape-gold { color: #fbbf24; }
+        .border-suape-gold { border-color: #fbbf24; }
+        .bg-suape-gold { background-color: #fbbf24; }
+
+        /* Animações de Entrada */
+        .animate-fade-up {
+            animation: fadeUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-500 { animation-delay: 0.5s; }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Efeitos de Vidro e Cartão */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .hover-card {
+            transition: all 0.3s ease;
+        }
+        .hover-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.15);
+            border-left-color: #fbbf24; /* Muda para dourado ao passar o mouse */
+        }
+
+        /* Contador */
+        .countdown-item {
+            background: rgba(37, 99, 235, 0.05);
+            border-radius: 8px;
+            padding: 8px 4px;
+            min-width: 60px;
+            border: 1px solid rgba(37, 99, 235, 0.1);
+        }
+
+        /* Padrão de fundo do cabeçalho */
+        .header-pattern {
+            background-color: #1e3a8a;
+            background-image: 
+                radial-gradient(circle at 100% 100%, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 10px, transparent 10px),
+                radial-gradient(circle at 0% 0%, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 10px, transparent 10px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <!-- Container Principal -->
+    <div class="max-w-4xl w-full glass-card rounded-2xl overflow-hidden animate-fade-up relative">
+        
+        <!-- Elemento decorativo flutuante -->
+        <div class="absolute -top-10 -right-10 w-32 h-32 bg-yellow-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"></div>
+        <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float delay-500"></div>
+
+        <!-- Cabeçalho -->
+        <div class="header-pattern p-8 text-center relative border-b-4 border-suape-gold z-10">
+            <div class="flex justify-between items-start mb-2">
+                <div class="text-white/80 text-xs tracking-[0.2em] font-bold uppercase animate-fade-up delay-100">DINFRA • 2025</div>
+                <i class="fas fa-star text-suape-gold text-xl animate-spin" style="animation-duration: 8s;"></i>
+            </div>
+            
+            <h1 class="text-3xl md:text-4xl font-extrabold text-white tracking-wide mt-4 uppercase animate-fade-up delay-200 drop-shadow-lg">
+                Reunião de <span class="text-suape-gold">Resultados</span>
+            </h1>
+            <div class="h-1 w-24 bg-suape-gold mx-auto mt-4 rounded-full animate-fade-up delay-300"></div>
+        </div>
+
+        <div class="p-8 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-white/50 backdrop-blur-sm">
+            
+            <!-- Coluna Esquerda: Texto e Emoção -->
+            <div class="space-y-8 animate-fade-up delay-300">
+                <div class="space-y-4">
+                    
+                    <div class="text-gray-600 leading-relaxed text-sm md:text-base space-y-4">
+                        <p>
+                            Atendendo à solicitação da Diretoria, este encontro terá como foco a apresentação dos <strong>Resultados DINFRA 2025</strong>, abrangendo indicadores, entregas, iniciativas tecnológicas e o planejamento preliminar para 2026.
+                        </p>
+                        <p>
+                            A participação de todos é muito importante para alinharmos informações, fortalecer a comunicação interna e garantirmos que toda a equipe esteja atualizada sobre os avanços da nossa Diretoria.
+                        </p>
+                        <p class="font-bold text-suape-blue text-lg">
+                            Contamos com sua presença.
+                        </p>
+                    </div>
+                    
+                    <div class="flex items-center space-x-3 text-suape-blue font-medium bg-blue-50/80 p-3 rounded-lg border border-blue-100 inline-block w-full md:w-auto">
+                        <i class="fas fa-quote-left text-suape-gold text-lg"></i>
+                        <span class="italic text-xs md:text-sm text-gray-700">"A melhor rota do Brasil para o mundo começa em você."</span>
+                    </div>
+                </div>
+
+                <!-- Contador Regressivo -->
+                <div>
+                    <p class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Contagem Regressiva para o evento:</p>
+                    <div class="flex space-x-3 text-center" id="countdown">
+                        <div class="countdown-item">
+                            <span class="block text-xl font-bold text-suape-blue" id="days">00</span>
+                            <span class="text-[10px] uppercase text-gray-500">Dias</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="block text-xl font-bold text-suape-blue" id="hours">00</span>
+                            <span class="text-[10px] uppercase text-gray-500">Horas</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="block text-xl font-bold text-suape-blue" id="minutes">00</span>
+                            <span class="text-[10px] uppercase text-gray-500">Min</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="block text-xl font-bold text-suape-blue" id="seconds">00</span>
+                            <span class="text-[10px] uppercase text-gray-500">Seg</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coluna Direita: Cards de Informação -->
+            <div class="space-y-4 animate-fade-up delay-500">
+                <!-- Card Data -->
+                <div class="hover-card flex items-center p-4 bg-white rounded-xl shadow-sm border-l-4 border-suape-blue cursor-default">
+                    <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-suape-blue text-2xl mr-5 shadow-inner">
+                        <i class="far fa-calendar-check"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Quando?</p>
+                        <p class="text-gray-900 font-extrabold text-xl">11 de Dezembro</p>
+                        <p class="text-gray-500 text-sm font-medium">Quinta-feira, 2025</p>
+                    </div>
+                </div>
+
+                <!-- Card Hora -->
+                <div class="hover-card flex items-center p-4 bg-white rounded-xl shadow-sm border-l-4 border-suape-blue cursor-default">
+                    <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-suape-blue text-2xl mr-5 shadow-inner">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Que horas?</p>
+                        <p class="text-gray-900 font-extrabold text-xl">14:00h</p>
+                    </div>
+                </div>
+
+                <!-- Card Local -->
+                <div class="hover-card flex items-center p-4 bg-white rounded-xl shadow-sm border-l-4 border-suape-blue cursor-default">
+                    <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-suape-blue text-2xl mr-5 shadow-inner">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Onde?</p>
+                        <p class="text-gray-900 font-extrabold text-xl">Sala de Treinamento</p>
+                        <p class="text-gray-500 text-sm font-medium">6º Andar</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Rodapé Minimalista -->
+        <div class="bg-gray-50/80 p-4 text-center border-t border-gray-100 text-xs text-gray-400">
+            <span>DINFRA • Diretoria de Infraestrutura</span>
+        </div>
+    </div>
+
+    <script>
+        // Lógica da Contagem Regressiva
+        function updateCountdown() {
+            const eventDate = new Date('December 11, 2025 14:00:00').getTime();
+            const now = new Date().getTime();
+            const gap = eventDate - now;
+
+            if (gap > 0) {
+                const second = 1000;
+                const minute = second * 60;
+                const hour = minute * 60;
+                const day = hour * 24;
+
+                document.getElementById('days').innerText = Math.floor(gap / day).toString().padStart(2, '0');
+                document.getElementById('hours').innerText = Math.floor((gap % day) / hour).toString().padStart(2, '0');
+                document.getElementById('minutes').innerText = Math.floor((gap % hour) / minute).toString().padStart(2, '0');
+                document.getElementById('seconds').innerText = Math.floor((gap % minute) / second).toString().padStart(2, '0');
+            } else {
+                document.getElementById('countdown').innerHTML = '<span class="text-suape-blue font-bold text-lg">O evento começou!</span>';
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>
